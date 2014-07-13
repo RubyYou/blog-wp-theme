@@ -1,0 +1,220 @@
+/*
+* Luluvirus official site 1.0
+* Extend to Skeleton responsive template 
+*/
+/* Table of Content
+==================================================
+	#Fonts and Variables
+	#Site Styles
+	#Page Styles
+	#Media Queries */
+/* #Fonts and Variables
+================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic);
+/* #Site Styles
+================================================== */
+/* line 31, ../components/sass/layout.scss */
+* {
+  color: #626262;
+  line-height: 1.8em; }
+
+/* line 35, ../components/sass/layout.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #111111;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; }
+
+/* line 40, ../components/sass/layout.scss */
+body {
+  border-top: 4px solid #111111;
+  /*background:$lightgrey;*/
+  padding: 3em 0; }
+
+/* line 45, ../components/sass/layout.scss */
+aside {
+  padding: 0 5px;
+  text-align: center;
+  position: fixed; }
+  /* line 49, ../components/sass/layout.scss */
+  aside p {
+    padding: 10px 0;
+    text-align: center; }
+
+/* line 54, ../components/sass/layout.scss */
+date {
+  font-size: 12px; }
+
+/* line 57, ../components/sass/layout.scss */
+a {
+  color: #f3724b;
+  text-decoration: none; }
+
+/* line 61, ../components/sass/layout.scss */
+i {
+  list-style: none;
+  background: #111111;
+  width: 10px;
+  height: 10px;
+  color: white;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+  padding: 8px 10px 10px 8px;
+  margin: 0 3px; }
+  /* line 70, ../components/sass/layout.scss */
+  i:hover {
+    background: #f3724b;
+    cursor: pointer; }
+
+/* line 76, ../components/sass/layout.scss */
+.left {
+  text-align: left; }
+
+/* line 79, ../components/sass/layout.scss */
+.right {
+  text-align: right; }
+
+/* line 82, ../components/sass/layout.scss */
+.desktop {
+  display: block; }
+
+/* line 85, ../components/sass/layout.scss */
+.mobile {
+  display: none; }
+
+/* #Page Styles
+================================================== */
+/* line 92, ../components/sass/layout.scss */
+.project {
+  position: relative;
+  margin-bottom: 4em; }
+  /* line 95, ../components/sass/layout.scss */
+  .project:hover {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  /* line 99, ../components/sass/layout.scss */
+  .project .thumb_img {
+    width: 100%;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px; }
+  /* line 104, ../components/sass/layout.scss */
+  .project .thumb_describe {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    padding: 10px 25px; }
+    /* line 109, ../components/sass/layout.scss */
+    .project .thumb_describe h3, .project .thumb_describe p, .project .thumb_describe date {
+      color: white; }
+
+/* line 116, ../components/sass/layout.scss */
+.notfix {
+  position: relative; }
+
+/* line 119, ../components/sass/layout.scss */
+.sideNav li {
+  padding: 10px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid #efefef; }
+
+/* line 124, ../components/sass/layout.scss */
+.socialicons {
+  margin-bottom: 2em; }
+
+/* line 127, ../components/sass/layout.scss */
+.block {
+  border-bottom: 3px solid #efefef; }
+  /* line 130, ../components/sass/layout.scss */
+  .block h1, .block h2, .block h3 {
+    font-weight: 300; }
+  /* line 133, ../components/sass/layout.scss */
+  .block date {
+    float: left;
+    display: inline-block;
+    margin-top: 10px; }
+  /* line 138, ../components/sass/layout.scss */
+  .block .btn {
+    background: #f3724b;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    float: right; }
+    /* line 146, ../components/sass/layout.scss */
+    .block .btn:hover {
+      background: #111111; }
+
+/* line 153, ../components/sass/layout.scss */
+.contentBlock {
+  border-top: 5px solid #efefef;
+  border-bottom: 5px solid #efefef; }
+  /* line 156, ../components/sass/layout.scss */
+  .contentBlock h1, .contentBlock h2, .contentBlock h3 {
+    font-weight: 300; }
+  /* line 159, ../components/sass/layout.scss */
+  .contentBlock h1 {
+    color: #f3724b;
+    padding: 20px 0 10px; }
+  /* line 163, ../components/sass/layout.scss */
+  .contentBlock p {
+    color: black; }
+  /* line 166, ../components/sass/layout.scss */
+  .contentBlock code {
+    background: #efefef;
+    display: block;
+    padding: 20px; }
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  /* line 178, ../components/sass/layout.scss */
+  .grid li {
+    width: 100%; } }
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 186, ../components/sass/layout.scss */
+  .project .thumb_describe {
+    padding: 10px;
+    max-width: 160px;
+    top: 20px; }
+    /* line 190, ../components/sass/layout.scss */
+    .project .thumb_describe h3 {
+      font-size: 15px; } }
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* line 198, ../components/sass/layout.scss */
+  aside {
+    position: relative; }
+
+  /* line 201, ../components/sass/layout.scss */
+  .project .thumb_describe {
+    top: 0;
+    position: relative; }
+    /* line 204, ../components/sass/layout.scss */
+    .project .thumb_describe h3, .project .thumb_describe p, .project .thumb_describe date {
+      color: #111111;
+      padding-top: 0; }
+    /* line 208, ../components/sass/layout.scss */
+    .project .thumb_describe img {
+      display: none; }
+
+  /* line 212, ../components/sass/layout.scss */
+  .desktop {
+    display: none; }
+
+  /* line 215, ../components/sass/layout.scss */
+  .mobile {
+    display: block; } }
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */

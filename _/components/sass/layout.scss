@@ -55,8 +55,11 @@ date{
 	font-size:12px;
 }
 a{
-	color:$orange;
+	color:$main;
 	text-decoration:none;
+	&:hover{
+		color:$orange;
+	}
 }
 i{
 	list-style: none;
@@ -121,12 +124,10 @@ i{
 	margin:0 30px;
 	border-bottom:1px solid $lightgrey;
 }
-.socialicons{
-	margin-bottom:2em;
-}
-.block{
-	//margin:3px 8px;
+li.block{
+	margin:3px 8px;
 	border-bottom:3px solid $lightgrey;
+	padding-bottom:1em;
 	h1,h2,h3{
 		font-weight: 300;
 	}
@@ -148,10 +149,15 @@ i{
 		}
 	}
 }
-
+p.archiveTitle{
+	text-transform:capitalize;
+	color:$grey;
+	font-weight:300;
+	padding:5px 10px;
+	float:left;
+}
 
 .contentBlock{
-	border-top:5px solid $lightgrey;
 	border-bottom:5px solid $lightgrey;
 	h1,h2,h3{
 		font-weight: 300;
@@ -167,6 +173,17 @@ i{
 		background:$lightgrey;
 		display:block;
 		padding:20px;
+	}
+	a{
+		background:$orange;
+		color: white;
+		font-size: 11px;
+		font-weight: bold;
+		padding:5px 10px;
+		margin: 20px 0;
+		&:hover{
+			background:$orange;
+		}
 	}
 }
 
